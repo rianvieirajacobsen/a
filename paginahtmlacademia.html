@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Relato do Trabalho Interdisciplinar</title>
+  <style>
+    :root{--bg:#0f1720;--card:#0b1220;--accent:#7dd3fc;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#071022 0%, #081426 60%); color:#e6eef6; margin:0; padding:24px}
+    .container{max-width:980px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    h1{font-size:clamp(1.6rem,3vw,2.4rem);margin:0}
+    p.lead{color:var(--muted);margin:6px 0 18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);margin-bottom:14px}
+    .section-title{display:flex;justify-content:space-between;align-items:center}
+    h2{margin:0;font-size:1.05rem}
+    .meta{color:var(--muted);font-size:0.9rem}
+    .placeholder{border:2px dashed rgba(125,211,252,0.12);padding:14px;border-radius:8px;text-align:center;color:var(--muted);min-height:140px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+    .placeholder input[type=file]{width:100%}
+    .content{margin-top:12px;line-height:1.6;color:#dceefa}
+    footer{color:var(--muted);font-size:0.9rem;margin-top:18px;text-align:center}
+    .btn{background:transparent;border:1px solid rgba(125,211,252,0.18);padding:8px 12px;border-radius:8px;color:var(--accent);cursor:pointer}
+    code{background:var(--glass);padding:2px 6px;border-radius:6px;color:#cfeffd}
+    @media (max-width:600px){body{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Relato do Trabalho Interdisciplinar ((Academia)) </h1>
+        <p class="lead">Um resumo pessoal das etapas: A elaboração do diagrama UML, a criação da academia no Sweet Home 3D e o desenvolvimento de um sistema inteligente.</p>
+      </div>
+      <div style="margin-left:auto;text-align:right">
+        <div class="meta">Criadores: Rian Vieira, Fellipy, Carlos Enhrique de Souza e Hiago.</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card" id="introducao">
+        <div class="section-title">
+          <h2>Introdução</h2>
+        </div>
+        <div class="content">
+          <p>Neste documento descrevo o processo que eu e meu grupo realizamos para produzir o trabalho interdisciplinar das disciplinas técnicas, envolvendo nele desde um simples diagrama UML à até uma maquete 3d no aplicativo Sweet Home.</p>
+        </div>
+      </section>
+
+      <section class="card" id="uml">
+        <div class="section-title">
+          <h2>1. Diagrama UML</h2>
+          <span class="meta">Modelagem e justificativa</span>
+        </div>
+        <div class="content">
+          <p>Descrevo aqui como construí o diagrama UML: as decisões de modelagem foram feitas especialmente no canva, os casos de uso priorizados e a organização das classes, assim como também focando na clareza das responsabilidades, na separação entre camadas (apresentação, negócio e persistência) e na definição de associações e agregações relevantes.</p>
+
+          <h3>Decisões de modelagem</h3>
+          <ul>
+            <li>Identificação dos atores principais e seus casos de uso prioritários.</li>
+            <li>Definição das entidades centrais e seus atributos mais relevantes.</li>
+            <li>Relacionamentos (herança, agregação, composição) explicitados onde necessário.</li>
+          </ul>
+           <div>
+
+          <img src="file:///C:/Users/Aluno/Downloads/fotos/diagrama2.jpg">
+          
+        </div>
+      </section>
+
+      <section class="card" id="sweethome">
+        <div class="section-title">
+          <h2>2. Academia 3D (Sweet Home 3D)</h2>
+          <span class="meta">Projeto espacial e aprendizado prático</span>
+        </div>
+        <div class="content">
+          <p>Na etapa prática, desenvolvi uma maquete 3D de uma academia usando o Sweet Home 3D. Planejei a distribuição dos equipamentos, fluxos de circulação e pontos de acesso para sensores (que futuramente alimentariam o sistema inteligente).</p>
+
+          <h3>Processo</h3>
+          <ol>
+            <li>Levantamento do espaço e esboço em planta.</li>
+            <li>Modelagem das salas e posicionamento dos aparelhos.</li>
+            <li>Ajustes de iluminação, texturas e vistas para apresentação.</li>
+          </ol>
+
+          <div class="placeholder" id="img-sweethome">
+            <!-- INSIRA AQUI CAPTURAS DO SWEETHOME 3D -->
+            <strong>Espaço para imagens do projeto 3D</strong>
+            <small>Carregue imagens das vistas em planta ou 3D (ex.: planta baixa, perspectiva interna).</small>
+            <input type="file" accept="image/*" multiple aria-label="Carregar imagens Sweet Home 3D" />
+          </div>
+
+          <p>Posso anexar notas sobre escolhas ergonômicas, localização de tomadas/portas e pontos para instalação de dispositivos IoT.</p>
+        </div>
+      </section>
+
+      <section class="card" id="sistema-inteligente">
+        <div class="section-title">
+          <h2>3. Sistema Inteligente</h2>
+          <span class="meta">Integração e automação</span>
+        </div>
+        <div class="content">
+          <p>Por fim, concebi um protótipo conceitual de um sistema inteligente que integra o diagrama UML (modelo de domínio) e os dados do ambiente 3D. A ideia central é permitir automações como monitoramento de ocupação, sugestões de treino e manutenção preventiva dos equipamentos.</p>
+
+          <h3>Arquitetura proposta</h3>
+          <ul>
+            <li>Camada de sensores/edge — captura de dados na academia (ocupação, uso de equipamento).</li>
+            <li>Back-end — serviços para armazenamento, regras de negócio e APIs.</li>
+            <li>Módulo inteligente — componentes de análise (regras, ML leve) para recomendações.</li>
+            <li>Front-end — painel de controle para instrutores e administradores.</li>
+          </ul>
+
+          <div class="placeholder" id="img-sistema">
+            <!-- INSIRA AQUI ESQUEMAS DO SISTEMA INTELIGENTE -->
+            <strong>Espaço para esquema do Sistema Inteligente</strong>
+            <small>Adicione diagramas arquiteturais, fluxos de dados ou capturas de tela do protótipo.</small>
+            <input type="file" accept="image/*" aria-label="Carregar imagem do sistema inteligente" />
+          </div>
+
+          <p>Notas sobre inteligência: aqui eu detalho se usei lógica baseada em regras, modelos preditivos, ou integração com APIs de terceiros (por exemplo para autenticação ou análise de dados).</p>
+        </div>
+      </section>
+
+      <section class="card" id="conclusao">
+        <div class="section-title">
+          <h2>Conclusão e autoavaliação</h2>
+        </div>
+        <div class="content">
+          <p>Finalizo relatando o que aprendi, dificuldades que enfrentei e como cada artefato contribuiu para o resultado final. Em primeira pessoa, descrevo minhas decisões, os pontos em que pedi ajuda e as próximas etapas que pretendo seguir.</p>
+
+          <p>Exemplos de itens que posso completar depois:
+          <ul>
+            <li>Adicionar o diagrama UML finalizado.</li>
+            <li>Inserir capturas da academia 3D com anotações.</li>
+            <li>Colocar pseudocódigo ou trechos de API do sistema inteligente.</li>
+          </ul>
+          </p>
+        </div>
+      </section>
+
+      <section class="card" id="referencias">
+        <div class="section-title">
+          <h2>Referências e anexos</h2>
+        </div>
+        <div class="content">
+          <p>Aqui eu listo referências usadas (tutoriais do Sweet Home 3D, guias UML, artigos sobre sistemas inteligentes) e adiciono anexos como arquivos exportados (.sh3d, imagens, JSON de configuração).</p>
+
+          <div style="display:flex;gap:10px;margin-top:8px;flex-wrap:wrap">
+            <button class="btn" onclick="downloadTemplate()">Baixar template (MD)</button>
+            <button class="btn" onclick="window.print()">Imprimir/Exportar PDF</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+</body>
+</html>
